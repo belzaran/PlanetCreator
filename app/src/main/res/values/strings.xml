@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PlanetCreator</string>
+    <string name="distance">Distance</string>
+    <string name="mass">Mass</string>
+    <string name="radius">Radius</string>
+    <string name="gravity">Gravity</string>
+    <string name="temperature">Temperature</string>
+    <string name="time">Time</string>
+    <string name="money">Money</string>
+</resources>

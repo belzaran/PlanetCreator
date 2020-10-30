@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_name"
+        style="@style/TextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Planet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_money_1"
+        style="@style/TextSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/money"
+        app:layout_constraintRight_toLeftOf="@id/text_money_2"
+        app:layout_constraintLeft_toLeftOf="@id/image_planet"
+        app:layout_constraintTop_toTopOf="@id/text_name"
+        app:layout_constraintBottom_toBottomOf="@id/text_name"/>
+
+    <TextView
+        android:id="@+id/text_money_2"
+        style="@style/TextValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toRightOf="@id/text_money_1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_money_1"
+        app:layout_constraintBottom_toBottomOf="@id/text_money_1"/>
+
+    <TextView
+        android:id="@+id/text_time_1"
+        style="@style/TextSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        app:layout_constraintRight_toLeftOf="@id/text_time_2"
+        app:layout_constraintLeft_toRightOf="@id/text_distance_2"
+        app:layout_constraintTop_toBottomOf="@id/text_name"
+        app:layout_constraintBottom_toTopOf="@id/image_planet"/>
+
+    <TextView
+        android:id="@+id/text_time_2"
+        style="@style/TextValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toRightOf="@id/text_time_1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_time_1"
+        app:layout_constraintBottom_toBottomOf="@id/text_time_1"/>
+
+    <TextView
+        android:id="@+id/text_distance_1"
+        style="@style/TextSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/distance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text_distance_2"
+        app:layout_constraintTop_toBottomOf="@id/text_name" />
+
+    <TextView
+        android:id="@+id/text_distance_2"
+        style="@style/TextValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toRightOf="@id/text_distance_1"
+        app:layout_constraintRight_toLeftOf="@id/image_planet"
+        app:layout_constraintTop_toTopOf="@id/text_distance_1"
+        app:layout_constraintBottom_toBottomOf="@id/text_distance_1"/>
+
+    <TextView
+        android:id="@+id/text_mass_1"
+        style="@style/TextSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/mass"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text_mass_2"
+        app:layout_constraintTop_toBottomOf="@id/text_distance_1" />
+
+    <TextView
+        android:id="@+id/text_mass_2"
+        style="@style/TextValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toRightOf="@id/text_mass_1"
+        app:layout_constraintRight_toLeftOf="@id/image_planet"
+        app:layout_constraintTop_toTopOf="@id/text_mass_1"
+        app:layout_constraintBottom_toBottomOf="@id/text_mass_1"/>
+    
+    <TextView
+        android:id="@+id/text_radius_1"
+        style="@style/TextSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/radius"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text_radius_2"
+        app:layout_constraintTop_toBottomOf="@id/text_mass_1" />
+
+    <TextView
+        android:id="@+id/text_radius_2"
+        style="@style/TextValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toRightOf="@id/text_radius_1"
+        app:layout_constraintRight_toLeftOf="@id/image_planet"
+        app:layout_constraintTop_toTopOf="@id/text_radius_1"
+        app:layout_constraintBottom_toBottomOf="@id/text_radius_1"/>
+
+    <TextView
+        android:id="@+id/text_gravity_1"
+        style="@style/TextSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/gravity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text_gravity_2"
+        app:layout_constraintTop_toBottomOf="@id/text_radius_1" />
+
+    <TextView
+        android:id="@+id/text_gravity_2"
+        style="@style/TextValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toRightOf="@id/text_gravity_1"
+        app:layout_constraintRight_toLeftOf="@id/image_planet"
+        app:layout_constraintTop_toTopOf="@id/text_gravity_1"
+        app:layout_constraintBottom_toBottomOf="@id/text_gravity_1"/>
+
+    <TextView
+        android:id="@+id/text_temperature_1"
+        style="@style/TextSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text_temperature_2"
+        app:layout_constraintTop_toBottomOf="@id/text_gravity_1" />
+
+    <TextView
+        android:id="@+id/text_temperature_2"
+        style="@style/TextValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toRightOf="@id/text_temperature_1"
+        app:layout_constraintRight_toLeftOf="@id/image_planet"
+        app:layout_constraintTop_toTopOf="@id/text_temperature_1"
+        app:layout_constraintBottom_toBottomOf="@id/text_temperature_1"/>
+
+    <Button
+        android:id="@+id/button_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="METEOR"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text_temperature_2"
+        app:layout_constraintTop_toBottomOf="@id/text_temperature_1"
+        />
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ERUPTION"
+        app:layout_constraintLeft_toRightOf="@id/button_0"
+        app:layout_constraintRight_toLeftOf="@id/button_2"
+        app:layout_constraintBottom_toBottomOf="@id/button_0"
+        />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEGASSING"
+        app:layout_constraintLeft_toRightOf="@id/button_1"
+        app:layout_constraintRight_toLeftOf="@id/image_planet"
+        app:layout_constraintTop_toTopOf="@id/button_1"
+        app:layout_constraintBottom_toBottomOf="@id/button_1"
+        />
+
+    <ImageView
+        android:id="@+id/image_planet"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/planet"
+        app:layout_constraintLeft_toRightOf="@id/text_temperature_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_name"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </ImageView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
